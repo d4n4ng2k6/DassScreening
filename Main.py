@@ -84,11 +84,31 @@ def chatbot(user_input, state):
     original_question = dass_questions[index]["text"]
     response_text = beri_respon(original_question, user_input)
     index+=1
+
     # Analyze result
+    if index >= len(dass_questions):
+        summary = analyze_result()
+        final_response = f"{response_text}\n\n{summary}"
+        history.append((user_input,final_response))
+        tts_path = generate_tts(final_response)
+        return final_response,tts_path,{"index":-1,"history":[],"clear_input":True}
     next_q = frase_ulang(index)
     response = f"{response_text}\n\n{next_q}"
     tts_path = generate_tts(response)
     return response,tts_path, {"index": index, "history": history, "clear_input":True}
+
+def analyze_result():
+    result = {"Stress": 0, "Anxiety": 0, "Depression": 0}
+    for response in user_response.values():
+        result[response["kategori"]] += response["skor"]
+    summary_prompt = (
+        "Anda adalah seorang ahli di bidang kesehatan mental, sampaikan skor hasil analisa DASS berikut ini dan berikan kesimpulan."
+        f"\n Tingkat Depresi: {result["Depression"]}"
+        f"\n Tingkat Kecemasan: {result["Anxiety"]}"
+        f"\n Tingkat Stres: {result["Stress"]}"
+    ) 
+    Hasil = llm.invoke(summary_prompt)
+    return Hasil.content
 
 def transcribe(audio_path):
     if audio_path == None:
