@@ -1,0 +1,27 @@
+{
+    "DASS":[
+        {"text":"Saya merasa sulit untuk beristirahat.","category":"Stress"},
+        {"text":"Saya merasa bibir saya sering kering.","category":"Anxiety"},
+        {"text":"Saya sama sekali tidak dapat merasakan perasaan positif","category":"Depression"},
+        {"text":"Saya mengalami kesulitan bernafas (misalnya: seringkali terengah-engah atau tidak dapat bernafas padahal tidak melakukan aktivitas fisik sebelumnya).","category":"Anxiety"},
+        {"text":"Saya merasa sulit untuk mengembangkan inisiatif untuk melakukan sesuatu.","category":"Depression"},
+        {"text":"Saya cenderung bereaksi berlebihan terhadap suatu situasi.","category":"Stress"},
+        {"text":"Saya mengalami gemetar (misalnya di tangan).","category":"Anxiety"},
+        {"text":"Saya merasa sulit untuk bersantai.","category":"Stress"},
+        {"text":"Saya khawatir tentang situasi di mana saya mungkin panik dan membuat bodoh diriku sendiri","category":"Anxiety"},
+        {"text":"Saya merasa tidak ada hal yang dapat diharapkan di masa depan.","category":"Depression"},
+        {"text":"Saya merasa gelisah.","category":"Stress"},
+        {"text":"Saya merasa sulit untuk bersantai","category":"Stress"},
+        {"text":"Saya merasa sedih dan tertekan.","category":"Depression"},
+        {"text":"Saya menemukan diri saya menjadi tidak sabar ketika mengalami penundaan (misalnya: kemacetan lalu lintas,menunggu sesuatu)","category":"Stress"},
+        {"text":"Saya merasa lemas seperti mau pingsan.","category":"Anxiety"},
+        {"text":"Saya merasa saya kehilangan minat akan segala hal.","category":"Depression"},
+        {"text":"Saya merasa bahwa saya tidak berharga sebagai seorang manusia","category":"Depression"},
+        {"text":"Saya merasa bahwa saya mudah tersinggung","category":"Stress"},
+        {"text":"Saya berkeringat secara berlebihan (misalnya: tangan berkeringat), padahal temperatur tidak panas atau tidak melakukan aktivitas fisik sebelumnya.","category":"Anxiety"},
+        {"text":"Saya merasa takut tanpa alasan yang jelas.","category":"Anxiety"},
+        {"text":"Saya merasa sulit untuk beristirahat","category":"Depression"}
+
+    
+    ]
+}

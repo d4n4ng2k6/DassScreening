@@ -1,0 +1,4 @@
+OPENAI_API_BASE = "https://openrouter.ai/api/v1"
+OPENAI_API_KEY = "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"
+APP_URL ="http://127.0.0.1:7860"
+APP_TITLE="Chatbot Konseling"
